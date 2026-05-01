@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MESA Web UI</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>MESA · Multifacet Evolutionary Solution Architect</h1>
+    <p>Interfaz web para ejecutar el sistema evolutivo.</p>
+
+    <form id="mesa-form">
+      <label>Prompt
+        <textarea id="prompt" required placeholder="Describe el problema"></textarea>
+      </label>
+
+      <label>Restricciones (una por línea)
+        <textarea id="constraints" placeholder="Presupuesto limitado"></textarea>
+      </label>
+
+      <label>Preferencias (una por línea)
+        <textarea id="preferences" placeholder="Formato ejecutivo"></textarea>
+      </label>
+
+      <label>Máx. generaciones (1-5)
+        <input id="max_generations" type="number" min="1" max="5" value="2" />
+      </label>
+
+      <button type="submit">Ejecutar MESA</button>
+    </form>
+
+    <section>
+      <h2>Resultado</h2>
+      <pre id="result">Sin ejecutar.</pre>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

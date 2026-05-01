@@ -1,19 +1,19 @@
 # Project Futures (Ideas only)
 
-## 1) Evaluador con pruebas externas
-- **Valor:** subir precisión y evidencia mediante validaciones automáticas por tipo de tarea.
+## 1) Streaming de generaciones en tiempo real
+- **Valor:** ver evolución de Solores paso a paso en la UI.
 - **Costo:** medio.
-- **Riesgo:** latencia y falsos negativos.
-- **Validación:** comparar fitness y satisfacción de usuario vs baseline sin pruebas.
+- **Riesgo:** complejidad de sincronización frontend/backend.
+- **Validación:** medir claridad percibida por usuarios avanzados.
 
-## 2) Banco de órganos con scoring de compatibilidad
-- **Valor:** reutilización real de componentes ganadores entre corridas.
+## 2) Persistencia de memoria global y banco de órganos
+- **Valor:** aprendizaje acumulativo entre ejecuciones.
 - **Costo:** medio.
-- **Riesgo:** injertos incoherentes.
-- **Validación:** medir mejora por injerto y tasa de rollback.
+- **Riesgo:** degradación por órganos de baja calidad histórica.
+- **Validación:** comparar score promedio con/ sin memoria persistente.
 
-## 3) UI de trazabilidad por generaciones
-- **Valor:** transparencia para modo experto/demo.
+## 3) Modo experto con intervención manual
+- **Valor:** permitir matar ramas, forzar cruces y ajustar pesos de rúbrica.
 - **Costo:** medio-alto.
-- **Riesgo:** complejidad de interfaz.
-- **Validación:** pruebas de usabilidad y tiempo de decisión del usuario.
+- **Riesgo:** mayor superficie de errores de UX.
+- **Validación:** tiempo de decisión + calidad final percibida.
